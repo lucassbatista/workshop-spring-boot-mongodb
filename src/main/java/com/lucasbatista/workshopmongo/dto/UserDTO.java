@@ -45,5 +45,8 @@ public class UserDTO implements Serializable{
 		this.email = email;
 	}
 	
+	public User FromDTO() {
+		return new User(this.getId(), this.getName(), this.getEmail());
+	}
 	
 }
